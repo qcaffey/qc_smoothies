@@ -1,0 +1,839 @@
+* { 
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body{ 
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+
+/* NAV BAR STARTS HERE*/
+header{ /*container for background img*/
+    background: url("images/1x/Asset61.png");
+    background-size: cover;
+    background-position: 10% 50%;
+    height: 700px;
+}
+
+.container{ /*parent container for logo and nav, impacts the children within it only*/
+    display: flex;
+    justify-content: flex-end;
+    /* width: 100%; */
+}
+
+.logo{ /* child container for logo*/
+    width: 350px;
+    margin: 15px auto 50px 25px;
+}
+
+.nav{ /* child container for nav bar */
+    list-style: none; /* notes removed bullets */
+    display: flex;
+}
+
+.nav li{ /*controls ul (li) items in nav bar*/
+    padding: 50px 25px;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav li a{ /*styles for a href in li*/
+    text-decoration: none;
+    color: #9A1A58;
+}
+
+.home li a{ /*styles for a href in li*/
+    text-decoration: none;
+    color: black;
+}
+
+.nav .active{
+    color: pink;
+}
+
+.nav li a:hover{
+    color:#04cb18;
+}
+
+#navcolor li a{ /*excluding home pg, all other pages*/ 
+    color: #9A1A58;
+}
+
+.account { /*sizing for icons account search*/
+    width: 30px;
+    height: 30px;
+    margin-right: 75px;
+    filter: invert(17%) sepia(76%) saturate(2531%) hue-rotate(310deg) brightness(90%) contrast(97%);
+}
+
+.accountblk { /*sizing for icons account search*/
+    width: 30px;
+    height: 30px;
+    margin-right: 75px;
+}
+
+.account:hover{
+    filter: invert(48%) sepia(84%) saturate(1100%) hue-rotate(85deg) brightness(99%) contrast(105%);
+    /*filter generator to change png color https://codepen.io/sosuke/pen/Pjoqqp so excited about it*/
+}
+
+.accountblk:hover{
+    filter: invert(48%) sepia(84%) saturate(1100%) hue-rotate(85deg) brightness(99%) contrast(105%);
+}
+
+.icons { /*sizing for icons account search*/
+    width: 30px;
+    height: 30px;
+    margin-right: 75px;
+}
+/* NAV BAR ENDS HERE*/
+
+/* HERO SECTION STARTS HERE*/
+.herotext{
+    color: white;
+    font-size: 2.25rem; /*36px*/
+    font-weight: 700;
+    text-align: center;
+    margin-top: -15px;
+}
+
+#centered{
+    margin: 0px auto;
+    margin-top: 95px;
+    width: 750px;
+}
+
+/* SEARCH BAR STARTS HERE*/
+
+.searchlabel{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-left: 10px;
+}
+
+.box { /*search bar under find recipe*/
+    width: 750px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    color: silver;
+    background: url("images/noun-magnify-1319168.png") no-repeat right center, white;
+    background-size: 5%;
+    background-position: top 4px right 15px;
+}
+/* HERO SECTION ENDS HERE*/
+
+/* SOTD SECTION STARTS HERE*/
+.sotd{
+   display: flex;
+   flex-direction: column;
+}
+
+.pink{ /*color border around text*/
+    background-color: rgba(153, 4, 77, 0.25);
+    /* width: 100%; */
+    padding-bottom: 30px;
+}
+
+.pink p{
+    font-size: 18px;
+}
+
+
+.fruits{
+    height: 750px;
+    float: left;
+    transform: scaleX(-1); /*flips image direction on x axis*/
+    margin-left: -670px;
+}
+
+.todaysmoothie{
+    color: #000;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    font-family: Dancing Script;
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 35px;
+    width: 1440px;
+    display: block;
+    text-align: center;
+    margin-left: -400px;
+}
+
+.magenta{ /*changing text colors*/
+    color: #9A1A58;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.lean{
+    margin-top: -5px;
+    margin-left: 50px;
+}
+
+.small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.tagsmall { /*sizing for small letter icons*/
+    width: 40px;
+    margin-right: 15px;
+}
+/* SOTD SECTION ENDS HERE*/
+
+/* HERO RECIPE SECTION STARTS HERE*/
+.herorecipe{
+    /* margin-left: -100px; */
+    font-weight: 500;
+    font-size: 18px;
+    padding: 25px 0px 0px 400px;
+    line-height: 1.6;
+    width: 1000px;
+    margin-left: 150px;
+}
+
+.herorecipe p{
+    padding: 35px 0px 50px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    width: 600px;
+    margin-left: 20px;
+}
+
+.text{
+    margin-right: 450px;
+}
+/* HERO RECIPE SECTION END HERE*/
+
+/* TOP5 SECTION STARTS HERE*/
+.top5{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px; /*extra padding-top from .magenta 20px*/
+    line-height: 1.35;
+}
+
+.top5align{
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+a.buttonmore{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 25px auto;
+    padding: 12.5px;
+    background-color: #7BC10B;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+a.buttonmore:hover {
+    color: white;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    padding: 28px;
+    margin: 10px auto;
+    background-color: #7BC10B;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 15px;
+    border-style: none;
+}
+/* TOP5 SECTION ENDS HERE*/
+
+/* NEW RECIPES SECTION STARTS HERE*/
+.newrecipes{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.newrecipes hr{
+    width: 30%;
+    margin: 50px 40px;
+    border: 1.55px solid #9A1A58;
+}
+
+.first4{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.group img{
+    max-width: 200px;
+}
+
+.group h3,h5{
+    margin: 20px 0px -10px 0px;
+    font-weight: 500;
+}
+
+.group a:hover{
+    color: rgba(44, 159, 4, 1);
+}
+
+#link{
+    text-align: center;
+}
+
+.line1,
+.line2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 1.5;
+}
+
+.line2{
+    font-style: italic;
+}
+/* NEW RECIPES SECTION ENDS HERE*/
+
+/* FOOTER STARTS HERE*/
+.bktop{
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+}
+.bktop img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    filter: invert(17%) sepia(76%) saturate(2531%) hue-rotate(310deg) brightness(90%) contrast(97%);
+}
+
+.bktopnospace{
+    margin-top: -25px;
+    margin-bottom: -120px;
+}
+.bktop:hover{
+    filter: invert(48%) sepia(84%) saturate(1100%) hue-rotate(85deg) brightness(99%) contrast(105%);
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #9A1A58;
+    color: white;
+    height: 125px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    width: 1440px;
+}
+
+.highlight{
+    font-style: italic;
+}
+/* FOOTER ENDS HERE*/
+
+/*smoothies.html STARTS HERE*/
+.browsecategories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+    margin-bottom: 75px;
+}
+
+#searchflex{
+    margin: 0px auto;
+}
+
+.categories li{
+    list-style: none;
+    margin-right: 200px;
+ }
+
+ .categories .bolder{
+    font-weight: 700;
+}
+
+.categories .blue{
+    font-weight: 600;
+    color: #4dbfcf;
+}
+
+.categories .green{
+    font-weight: 600;
+    color: rgba(44, 159, 4, 1);
+}
+
+.categories .violet{
+    font-weight: 600;
+    color: rgba(136, 94, 191, 1);
+}
+
+.categories .yellow{
+    font-weight: 600;
+    color: rgba(227, 175, 15, 1);
+}
+
+.categories .more{
+    font-weight: 600;
+    font-style: italic;
+    color:rgba(154, 26, 88, 1);
+}
+
+
+#smoothies{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 5px;
+    justify-content: space-evenly;
+    margin: 0px 20px;
+    width: 1400px;
+}
+
+#smoothies img{
+    width: 350px;
+}
+
+#smoothies p{
+    font-size: 18pt;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#smoothies .weightloss, 
+#smoothies .brainfog,
+#smoothies .hormones,
+#smoothies .energy{
+    font-size: 16pt;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+#smoothies a{
+    text-decoration: none;
+}
+
+#smoothies a:hover{
+    color: #4dbfcf;
+}
+
+#smoothies a img:hover{
+    transform: scale(0.95);
+}
+
+#impact:hover{
+    transform: scale(1.2);
+}
+
+.block{
+    background-color: rgba(123, 193, 11, 0.6);
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-top: 150px;
+    width: 1440px;
+}
+
+.email{
+    margin: 0px auto;
+    width: 900px;
+    text-align: center;
+    font-weight: 600;
+}
+
+input[type=email] {
+    height: 10px;
+    padding: 20px;
+    border-radius: 3px;
+    border: none;
+}
+
+input[type=submit]{
+    background-color: rgba(153, 4, 77, 1);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.nospace{
+    margin-top: 0px;
+}
+/*smoothies.html ENDS HERE*/
+
+/* benefitsacai.html and benefitsginger.html STARTS HERE*/
+.titles{/* hero image */
+    margin-bottom: 100px;
+    background-image: url("images/sf-ratul-ghosh-NPrWYa69Mz0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 100vw;
+}
+
+.buttoncols{
+    width: 1350px;
+}
+
+.columns button{ /*formats all buttons on ingredients page*/
+   width: 300px;
+   height: 35px;
+   border-radius: 5px;
+   background-color: rgba(153, 4, 77, 0.4);
+   text-align: center;
+   padding-top: 7px;
+   margin-left: 75px;
+   margin-bottom: -5px;
+   margin-top: 0px;
+}
+
+#ginger button:hover,
+#acai button:hover{
+    background-color: rgba(123, 193, 11);
+    cursor: pointer;
+}
+
+#pressed{
+   background-color: rgba(123, 193, 11);
+}
+
+.ingredients{
+    margin-bottom: 100px;
+}
+
+.ingredients h2{ /* bottom section of page with acai berries*/
+   text-align: center;
+   margin-bottom: 30px;
+   margin-top: 125px;
+}
+
+.ingredients h4{
+   font-style: italic;
+}
+
+.foodimgs{
+   display: block;
+   width: 350px;
+   margin: 0px auto;
+   margin-bottom: 50px;
+}
+/* ingredients.html ENDS HERE*/
+
+/*recipe.html STARTS HERE*/
+#flushlt{
+    margin-left: -425px;
+}
+
+.img1{
+    background-image: url(images/1x/Asset62.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 500px;
+    height: 500px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.jump{
+    background-color: #7BC10B;
+    color: white;
+    width: 175px;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.jump a{
+    text-decoration: none;
+    color: white;
+}
+
+.jump a:visited{
+    color: white;
+}
+
+.jump a:hover{
+    color: pink;
+}
+
+.flexed{
+    display: flex;
+    column-gap: 15px;
+}
+
+.flexed div{
+    width: 125px;
+    text-transform: none;
+}
+
+.flexed2{
+    margin: 25px 0px;
+    width: 365px;
+    text-align: center;
+}
+
+.flexed2 img{
+    width: 50px;
+    float: left;
+    margin: 0px 25px;
+}
+
+.placement{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 75px;
+    background-image: url(images/2x/Hormones-H@2x.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60px;
+    margin-bottom: 50px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.one{
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.two{
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 50px;
+    color: rgba(10, 184, 193, 1);
+}
+
+.stars{
+    background-image: url(images/2x/stars@2x-100.jpg);
+    background-repeat: no-repeat;
+    background-size: 125px;
+    width: 140px;
+}
+
+.description{
+    width: 590px;
+    margin-bottom: 30px;
+}
+
+.section2{
+    margin: 50px;
+}
+
+.video{
+    float: right;
+}
+
+.ingredients, .instructions{
+    line-height: 1.8;
+    width: 590px;
+}
+
+li::marker{
+    font-size: 17px;
+}
+
+.itals{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.spaced{
+    margin-top: 25px;
+}
+
+.spaced2{
+    height: 75px;
+}
+
+.move{
+    margin-top: 50px;
+    margin-bottom: -5px;
+}
+
+.berry{
+    color: rgba(10, 184, 193, 1);
+    font-weight: 600;
+}
+
+.monster{
+    color: rgba(136, 94, 191, 1);
+    font-weight: 600;
+    width: 400px;
+}
+
+.right{
+    float: right;
+}
+
+.top{
+    margin-top: -550px;
+    margin-right: 50px;
+}
+/*recipe.html ENDS HERE*/
+
+
+/* blog.html STARTS HERE*/
+.pgheadings {
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.showall {
+    color: #9A1A58;
+    text-align: right;
+    font-weight: 700;
+    font-size: 20px;
+    width: 1375px;
+    text-align: right;
+}
+
+.showall a:hover{
+    color: #7BC10B;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: #9A1A58; 
+}
+
+.blogposts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 75px 125px;
+    margin: 0px auto;
+    width: 1350px;
+}
+
+.photos{
+    width: 350px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.date{
+    font-size: 18px;
+    margin-top: -8px;
+}
+
+.hashtags{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 75px;
+    cursor: pointer;
+}
+
+.pages li:first-child{
+    color: #9A1A58;
+    font-weight: 800;
+}
+
+.explore{
+    margin-left: 100px;
+    margin-bottom: 25px;
+    color: #9A1A58;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px 75px;
+    margin-left: 225px;
+}
+
+.buttonblog {
+    width: 275px;
+    height: 50px;
+    padding: 10px;
+    background-color: #7BC10B;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.buttonblog:hover{
+    background-color: pink;
+}
